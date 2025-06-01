@@ -17,12 +17,43 @@
     <h4>四级标题</h4>
     h$*6  创建多级标题<br>
     <p>这是一个段落。paragraph</p>
-    <ul>unsigned list
+
+    <ol>有序列表
         <li>列表项 1</li>
         <li>列表项 2</li>
         <li>列表项 3</li>
+    </ol>
+
+    <ol type="I">有序列表
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 4</li>
+        <ol type="a">
+            <li>列表项 1</li>
+            <li>列表项 2</li>
+            <li>列表项 3</li>
+        </ol>
+    </ol>
+
+
+    <ul>unsigned list 快捷键 ul>li*3
+        <li>disc 实心圆</li>
+        <li>circle 空心圆</li>
+        <li>square 方块</li>
+        <li>none 无</li>
     </ul>
+
+    <ul type="circle">unsigned list
+        <li>列表项 1</li>
+        <li>列表项 2</li>
+        <li>列表项 3</li>
+        <li>列表项 3</li>
+    </ul>
+
     <p>这是一个链接：<a href="https://www.example.com">点击这里</a></p>
+    <p>这是一个链接去往小米官网 <a href="https://www.xiaomi.com">小米官网</a></p>
+    <p>这是一个链接去锚点<a href="#myquote">去锚点</a></p>
 
     <p>这是一个图片：<br>
         <img src="https://avatars.githubusercontent.com/u/47288856?v=4" 
@@ -105,7 +136,7 @@
     <p>这是一个计时器：</p>
     <time datetime="2023-10-01T12:00:00">2023年10月1日 12:00</time>
 
-    <p>这是一个引用：</p>
+    <p id="myquote">这是一个引用：</p>
     <blockquote cite="https://www.example.com">
         这是一个引用的文本。
     </blockquote>
@@ -113,6 +144,7 @@
     <p>这是一个代码片段：</p>
     <pre><code>console.log('Hello, World!');</code></pre>
     <p>这是一个强调文本：</p>
+    <p><b>这是加粗</b></p>
     <p><strong>这是加粗文本。</strong></p>
     <p><em>这是斜体文本。</em></p>
     <p>这是一个删除线文本：<del>已删除的文本</del></p>
